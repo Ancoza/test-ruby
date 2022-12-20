@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: blog_production
+  database: blog_production_htw8
   username: ancoza
-  password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
+  password: 2gZG7KIAcyyVDRKHMf0LgJiGwatkeioE
+  #password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
