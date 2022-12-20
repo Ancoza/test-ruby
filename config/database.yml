@@ -81,9 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: blog_production_htw8
-  username: ancoza
-  password: 2gZG7KIAcyyVDRKHMf0LgJiGwatkeioE
-  host: dpg-cegmjv2rrk0fhn0kcccg-a
-  #password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
-  url: postgres://ancoza:2gZG7KIAcyyVDRKHMf0LgJiGwatkeioE@dpg-cegmjv2rrk0fhn0kcccg-a/blog_production_htw8
+  url: <%= ENV['DATABASE_URL'] %>
